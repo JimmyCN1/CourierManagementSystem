@@ -34,5 +34,5 @@ public abstract class Vehicle {
     return data.get(index);
   }
   
-  public abstract void getWearAndTearExpense();
+  public abstract double wearAndTearRate(double kilometers);
 }

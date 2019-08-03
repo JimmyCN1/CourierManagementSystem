@@ -18,4 +18,11 @@ public class MaintenanceData extends FleetData {
     this.maintenanceID = numMaintenance;
     this.vehicle = vehicle;
   }
+  
+  @Override
+  public int getID() { return this.maintenanceID; }
+  
+  public int getLastServicePoint() { return lastServicePoint; }
+  
+  public int getServiceInterval() { return serviceInterval; }
 }
