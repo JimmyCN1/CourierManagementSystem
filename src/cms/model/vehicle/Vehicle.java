@@ -52,5 +52,13 @@ public abstract class Vehicle {
     return jobData;
   }
   
+  public void setOdometer(double tripDistance) {
+    odometer += tripDistance;
+  }
+  
+  public void setLastServicePoint() {
+    lastServicePoint = odometer;
+  }
+  
   public abstract double wearAndTearRate(double kilometers);
 }
