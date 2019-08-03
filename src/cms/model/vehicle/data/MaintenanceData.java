@@ -1,6 +1,6 @@
-package fleet.data;
+package cms.model.vehicle.data;
 
-import fleet.Vehicle;
+import cms.model.vehicle.Vehicle;
 
 public class MaintenanceData extends FleetData {
   private static int numMaintenance;

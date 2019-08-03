@@ -7,7 +7,7 @@ import cms.model.vehicle.Van;
 
 /**
  * <b> CMSTestHarness </b> performs the following functionalities on the courier
- * management system.
+ * management interfaces.
  * 
  * - Add Vehicle (Vans + Trucks). - Display Information about a Vehicle(s). -
  * Assign a vehicle to a job (tests cases in which a job should be accepted and
@@ -21,7 +21,7 @@ public class CMSTestHarness
 	// this implies an interface or abstract class but since not covered until next week you can change to
 	// CourierManagementSystem cms = new CourierManagementSystem() if you prefer
 	// (it will get updated in the next tutelab week anyway!)
-	final protected static CourierManagementSystem cms = new CourierManagementSystemImpl();
+	final protected static CourierManagementSystem cms = new CourierManagementSystem();
 
 	/**
 	 * simple helper method to log job schedule details
