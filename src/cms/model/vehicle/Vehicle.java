@@ -1,9 +1,5 @@
 package cms.model.vehicle;
 
-import cms.model.vehicle.data.FleetData;
-import cms.model.vehicle.data.JobData;
-import cms.model.vehicle.data.MaintenanceData;
-
 import java.util.List;
 
 public abstract class Vehicle {
@@ -34,14 +30,6 @@ public abstract class Vehicle {
     this.model = model;
     this.odometer = odometer;
     this.maintenanceData = maintenanceData;
-  }
-  
-  public FleetData getJobOrMaintenance(int id, List<FleetData> data){
-    int index = 0;
-    while (data.get(index).getID() != id) {
-      index++;
-    }
-    return data.get(index);
   }
   
   public abstract double wearAndTearRate(double kilometers);
