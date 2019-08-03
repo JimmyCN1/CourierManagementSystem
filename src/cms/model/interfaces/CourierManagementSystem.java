@@ -8,7 +8,7 @@ public interface CourierManagementSystem {
   
   public void displayAllVehicles();
   
-  public Vehicle displayVehicleInfo(String registrationNumber);
+  public void displayVehicleInfo(String registrationNumber);
   
   public void displayAllJobs();
   

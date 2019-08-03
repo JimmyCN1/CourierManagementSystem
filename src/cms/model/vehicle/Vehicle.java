@@ -1,35 +1,55 @@
 package cms.model.vehicle;
 
-import java.util.List;
-
 public abstract class Vehicle {
   private String registrationNumber;
   private int year;
   private String make;
   private String model;
   private double odometer;
-  private double maintenanceData;
+  private double lastServicePoint;
+  private double serviceInterval;
   private int jobData;
   
-  public Vehicle(String registrationNumber, String model, int year, String make, double odometer,
-                 double maintenanceData, int jobData) {
+  public Vehicle(String registrationNumber, String make, int year, String model, double odometer,
+                 double serviceInterval) {
     this.registrationNumber = registrationNumber;
-    this.year = year;
     this.make = make;
+    this.year = year;
     this.model = model;
     this.odometer = odometer;
-    this.maintenanceData = maintenanceData;
-    this.jobData = jobData;
+    this.serviceInterval = serviceInterval;
   }
   
-  public Vehicle(String registrationNumber, String make, String model, int year, double odometer,
-                 double maintenanceData) {
-    this.registrationNumber = registrationNumber;
-    this.year = year;
-    this.make = make;
-    this.model = model;
-    this.odometer = odometer;
-    this.maintenanceData = maintenanceData;
+  public String getRegistrationNumber() {
+    return registrationNumber;
+  }
+  
+  public int getYear() {
+    return year;
+  }
+  
+  public String getMake() {
+    return make;
+  }
+  
+  public String getModel() {
+    return model;
+  }
+  
+  public double getOdometer() {
+    return odometer;
+  }
+  
+  public double getLastServicePoint() {
+    return lastServicePoint;
+  }
+  
+  public double getServiceInterval() {
+    return serviceInterval;
+  }
+  
+  public int getJobData() {
+    return jobData;
   }
   
   public abstract double wearAndTearRate(double kilometers);

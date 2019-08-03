@@ -20,12 +20,18 @@ public class CourierManagementSystemImpl implements CourierManagementSystem {
   
   @Override
   public void displayAllVehicles() {
-  
+    fleet.forEach((vehicle) -> {
+      System.out.println(vehicle.toString());
+    });
   }
   
   @Override
-  public Vehicle displayVehicleInfo(String registrationNumber) {
-    return null;
+  public void displayVehicleInfo(String registrationNumber) {
+    fleet.forEach(vehicle -> {
+      if (vehicle.getRegistrationNumber() == registrationNumber) {
+        System.out.println(vehicle.toString());
+      }
+    });
   }
   
   @Override

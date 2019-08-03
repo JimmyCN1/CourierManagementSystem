@@ -41,8 +41,8 @@ public class CMSTestHarness
   public static void main(String[] args)
   {
     // Van(reg, make, model, year, odo, serviceInterval)
-    cms.addVehicle(new Van("v1", "Sienna", 1998, "Toyota", 0.0, 500.0));
-    cms.addVehicle(new Van("v2", "Routan S", 2009, "Volkswagen", 0.0, 1000.0));
+    cms.addVehicle(new Van("v1", "Toyota", 1998, "Sienna", 0.0, 500.0));
+    cms.addVehicle(new Van("v2", "Volkswagen", 2009, "Routan S", 0.0, 1000.0));
     
     // Truck(reg, make, model, year, odo, serviceInterval, capacity)
     cms.addVehicle(new Truck("t1", "379",  1990, "Peterbilt", 0.0, 2000.0, 3000));
