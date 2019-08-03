@@ -1,7 +1,18 @@
 package fleet.data;
 
-public class JobData {
-  private int tripDistance;
+import fleet.Vehicle;
+
+public class JobData extends FleetData {
+  private static int numJobs;
   
-  public void wearAndTear(){}
+  private int jobID;
+  private int tripDistance;
+  private Vehicle vehicle;
+  
+  public JobData(int tripDistance) {
+    numJobs++;
+    this.jobID = numJobs;
+  }
+  
+  public int getID() { return this.jobID; }
 }
