@@ -48,10 +48,6 @@ public abstract class Vehicle {
     return serviceInterval;
   }
   
-  public int getJobData() {
-    return jobData;
-  }
-  
   public void setOdometer(double tripDistance) {
     odometer += tripDistance;
   }
